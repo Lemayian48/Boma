@@ -1,0 +1,6 @@
+/vendor/
+.env
+*.pdf
+*.log
+node_modules/
+
