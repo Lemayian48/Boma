@@ -1,4 +1,7 @@
 <?php
+if (!class_exists(\ZipArchive::class)) {
+    return [];
+}
 
 return [
 
