@@ -1,13 +1,14 @@
 # Use official PHP image with PHP 8.2 and FPM
 FROM php:8.2-fpm
 
-# Install system dependencies
+# Install system dependencies, including libpq-dev for PostgreSQL
 RUN apt-get update && apt-get install -y \
     git \
     curl \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
+    libpq-dev \
     zip \
     unzip \
     nodejs \
